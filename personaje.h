@@ -12,8 +12,7 @@
 
 #include <fstream>
 
-class personaje {
-    
+class personaje {    
     public:
     std::string nombre; 
     std::string casa; 

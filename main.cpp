@@ -10,7 +10,6 @@
 
 int main() {
 
-    
     arbolgenealogico arbol;
 
     // Cargar datos desde un archivo 
