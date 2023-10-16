@@ -28,5 +28,11 @@ HoD
    Personaje Aegon_II("Aegon", "Targaryen", "Dragon", 107, "legitimo");
    Personaje Helaena("Healena", "Targaryen", "Dragon", 109, "legitimo");
    Personaje Aemon("Aemon", "Targaryen", "Dragon", 110, "legitimo");
-   Personaje Daeron("Daeron", "Targaryen", "Dragon", 114, "legitimo");
-   
+   Personaje Daeron("Daeron", "Targaryen", "Dragon", 114, "legitimo");7
+
+// Vectores con los personajes
+   std::vector<Personaje*> hijos_viserys_aemma = {&Rhaenyra};
+   std::vector<Personaje*> hijos_rhaenyra_laenor = {&Jacaerys, &Lucerys, &Joffrey};
+   std::vector<Personaje*> hijos_rhaenyra_daemon = {&Aegon_III, &Viserys_II, &Visenya};
+
+   std::vector<Personaje*> hijos_viserys_alicent = {&Helaena, &Aemon, &Daeron};
