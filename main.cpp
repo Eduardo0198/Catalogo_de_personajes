@@ -9,6 +9,7 @@
 #include "personaje.h"
 
 int main() {
+
     
     arbolgenealogico arbol;
 
