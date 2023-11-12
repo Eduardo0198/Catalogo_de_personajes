@@ -1,45 +1,52 @@
-/*
-* Autor: jeviverose
-* Main
-*
-*/
 
 #include <iostream>
-#include "arbolgenealogico.h"
+#include <fstream>
+#include <sstream>
+#include <string>
+#include <vector>
+#include <map>
+#include <set>
+#include "grafo.h"
 #include "personaje.h"
 
 int main() {
-
-    arbolgenealogico arbol;
-
-    // Cargar datos desde un archivo 
-    arbol.cargarDesdeArchivo("datos.txt");
-
-    // Implementar la interfaz de usuario
+    Grafo grafo;
+    std::string dato_origen;
+    std::string dato_destino;
     int opcion;
+
     do {
-        std::cout << "1. Buscar personaje\n";
-        std::cout << "2. Imprimir árbol\n";
-        std::cout << "3. Salir\n";
+        std::cout << "\n\t Menu: " << std::endl;
+        std::cout << "1. Crear vertices " << std::endl;
+        std::cout << "2. Crear aristas " << std::endl;
+        std::cout << "3. Mostrar grafo " << std::endl;
+        std::cout << "4. Salir" << std::endl;
+        std::cout << "\nOpcion: " << std::endl;
         std::cin >> opcion;
 
         switch (opcion) {
             case 1:
-                std::cout << "Introduce el nombre del personaje a buscar: ";
-                std::string nombre;
-                std::cin >> nombre;
-                arbol.buscarPersonaje(nombre);
+                std::cout << "Digite un numero para el vertice: " << std::endl;
+                std::cin >> dato_origen;
+                grafo.insertarVertice(dato_origen);
+                system("pause");
                 break;
             case 2:
-                arbol.imprimirArbol();
+                std::cout << "Digite el nodo origen: " << std::endl;
+                std::cin >> dato_origen;
+                std::cout << "Digite el nodo destino: " << std::endl;
+                std::cin >> dato_destino;
+                grafo.insertarArista(dato_destino);
+                system("pause");
                 break;
             case 3:
-                std::cout << "Saliendo del programa.\n";
+                grafo.verLista();
+                std::cout << "  " << std::endl;
+                system("pause");
                 break;
-            default:
-                std::cout << "Opción no válida. Intente nuevamente.\n";
         }
-    } while (opcion != 3);
+        system("cls");
+    } while (opcion != 4);
 
     return 0;
 }
