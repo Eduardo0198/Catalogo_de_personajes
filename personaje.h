@@ -4,6 +4,7 @@
 #include <iostream>
 #include <vector>
 
+
 struct Personaje {
     std::string nombre;
     std::string casa;
