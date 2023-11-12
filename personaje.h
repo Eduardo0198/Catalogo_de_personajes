@@ -6,6 +6,7 @@
 
 
 struct Personaje {
+    
     std::string nombre;
     std::string casa;
     char sexo;

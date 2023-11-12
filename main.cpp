@@ -9,6 +9,7 @@
 #include "grafo.h"
 #include "personaje.h"
 
+
 int main() {
     Grafo grafo;
     std::string dato_origen;

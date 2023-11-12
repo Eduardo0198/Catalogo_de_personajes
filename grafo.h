@@ -17,6 +17,7 @@ struct Arista {
     struct Arista* liga_arista;
 };
 
+
 class Grafo {
 private:
     Nodo* sig_vertice;
