@@ -5,7 +5,7 @@ El programa simula las relaciones que existen en un arbol genealogico, esto se p
 Esto funcionaria de la siguiente manera.
 Hay dos tipo de Nodos, uno que representa al Hombre y el otro a la mujer, dichos nodos se podran conectar atraves de arcos con distintos pesos, ya que en un arbol genalogico so representan las relaciones de conyuge y de hijos, decidi tener un diferenciador en el peso de los arcos: 
 
-#### a) 1 representara la relacion de conyuge entre un nodo mujer y un nodo hombre
+### a) 1 representara la relacion de conyuge entre un nodo mujer y un nodo hombre
 ## b) 2 representara la relacion de hijos, en este caso solo un nodo mujer es quien se podra enlazar a mas nodos
 
 Esto se leeria atraves de los archivos txt, para esto abria un formato en especifico en el que los personajes se relacionen, es decir que si quieres que los personajes sean acamodados de una manera en especifico primero necesitamos establecerlo en el archivo txt, un ejemplo claro que se puede ver seria  el siguiete. 
