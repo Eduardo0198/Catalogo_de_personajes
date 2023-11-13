@@ -1,6 +1,7 @@
 #ifndef GRAFO_H
 #define GRAFO_H
 
+
 #include <iostream>
 #include "personaje.h"
 #include <vector>
