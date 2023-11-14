@@ -13,7 +13,7 @@ Esto se leeria atraves de los archivos txt, para esto abria un formato en especi
 ```
 Nombre, Casa, Sexo, Conyuge, Biografia
 Deanerys, Targeryan, F, Jon, Madre de Dragones y rompededora de cadenas
-on, Stark, M, Deanerys, El principe que fue prometido
+Jon, Stark, M, Deanerys, El principe que fue prometido
 Tryion, Lanister, M, Sansa, La mano de la reina
 ```
 Los cinco atributos de los personajes serian Nombre, casa, sexo, conyuge y biografia. Puede haber personajes que no sean tan importantes para el arbol genealogico de los Targeryan o simplemente no nos interesen tanto sus atributos, mas haya del nombre, sexo y casa. En dado caso lo que hariamos seria:
