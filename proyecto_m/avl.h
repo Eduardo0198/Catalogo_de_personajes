@@ -13,6 +13,7 @@ template <class T> class AVL {
 private:
   Node<T> *root;
 
+
 public:
   AVL();
   ~AVL();
