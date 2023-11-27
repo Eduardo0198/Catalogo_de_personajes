@@ -1,3 +1,0 @@
-Nombre, Casa, Sexo, Conyuge, Biografia
-Aegon, Targaryen, M, Rhaenys, El conquistador de los siete reinos.
-Rhaenys, Targaryen, F, Aegon, La dragona mas temida.
