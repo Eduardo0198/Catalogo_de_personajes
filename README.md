@@ -1,4 +1,4 @@
-# *Arbol Genealogico de la Casa Targeryan*
+# *Catalogo de personajes*
 
 El programa simula las relaciones que existen en un arbol genealogico, esto se puede lograr atreves de los grafos, estos son mas sencillos de usar pues los nodos de un grafo son mas faciles de manipular para poder crear relaciones complejas. Ya que el programa trata de simular a la Casa Targeryan de la serie de TV de Game of Thrones y House of the Dragon, podemos darnos cuentas que las relaciones familiares tienden ser mas complejas de lo habitual.
 
