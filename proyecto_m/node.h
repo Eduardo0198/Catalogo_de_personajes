@@ -1,4 +1,10 @@
 
+/*************************
+ Catalogo de personajes
+ node.h
+ Autor: Eviveroe
+ A01710605
+ *************************/
 
 #ifndef NODE_H
 #define NODE_H

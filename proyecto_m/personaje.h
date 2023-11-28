@@ -1,4 +1,10 @@
 
+/*************************
+ Catalogo de personajes
+ personaje.h
+ Autor: Eviveroe
+ A01710605
+ *************************/
 
 #ifndef PERSONAJE_H_
 #define PERSONAJE_H_
@@ -13,9 +19,9 @@ using namespace std;
 class personaje{
 
   private:
-    string Nombre; //nombre
-    string Casa; //Casa
-    string Frase; //frase
+    string Nombre; 
+    string Casa; 
+    string Frase; 
     int Seleccion;
 
   public:
@@ -83,7 +89,7 @@ bool personaje::operator==(const personaje& otro) const {
 }
 
 ostream& operator<<(ostream& os, const personaje& personaje) {
-    os << "Nombre: " << personaje.getNombre() << " | Casa: " << personaje.getCasa() << " | Frase: " << personaje.getFrase();
+    os << "* Nombre: " << personaje.getNombre() << " *  Casa: " << personaje.getCasa() << " *  Frase: " << personaje.getFrase();
     return os;
 }
 

@@ -1,3 +1,11 @@
+
+/*************************
+ Catalogo de personajes
+ avl.h
+ Autor: Eviveroe
+ A01710605
+ *************************/
+
 #ifndef AVL_H_
 #define AVL_H_
 
