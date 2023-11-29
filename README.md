@@ -1,8 +1,8 @@
 # *Catalogo de personajes*
 
-## Descripcion del programa
+### Descripcion del programa
 
-## Formato del Personaje
+### Formato del Personaje
 
 ### SICT0301: Evalúa los componentes
 
