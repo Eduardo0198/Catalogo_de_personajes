@@ -1,5 +1,9 @@
 # *Catalogo de personajes*
 
+## Descripcion del programa
+
+## Formato del Personaje
+
 ### SICT0301: Evalúa los componentes
 
 #### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
@@ -14,7 +18,7 @@
 
 #### Selecciona una estructura de datos adecuada al problema y lo usa correctamente.
 
- ### SICT0303: Implementa acciones científicas
+### SICT0303: Implementa acciones científicas
 
 #### Implementa mecanismos para consultar información de las estructras correctos.
 
