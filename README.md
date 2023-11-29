@@ -14,6 +14,7 @@
 </ul>
 
 #### Hace un análisis de complejidad correcto y completo todas las estructuras de datos y cada uno de sus usos en el programa.
+
 *Estructuras de Datos (Árbol AVL):*
 <ul>
   <li>Inserción (add): La inserción en un árbol AVL tiene una complejidad de O(log n), donde n es el número de nodos en el árbol, esta funcion se ocupa para agregar objetos de tipo personaje al arbol AVL y a su 
