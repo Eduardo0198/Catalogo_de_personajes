@@ -27,14 +27,14 @@
 </ul>
 Como tal el O(n log n) es la complejidad que define mas al AVL ya sea en sus mejores o peores casos. 
 
-*Búsqueda en Vector*
+*Búsqueda en Vector:*
 Se realiza una búsqueda lineal en el vector para determinar la existencia de un personaje al mostrar opciones al usuario.
 <ul>
   <li>Complejidad: La búsqueda lineal tiene una complejidad de O(n), donde n es el tamaño del vector.</li>
 </ul
   
 #### Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa.
-*Complejidad Total*
+*Complejidad Total:*
 
 La operación dominante es el ordenamiento del vector de personajes con merge sort, lo que determina la complejidad final del programa: O(n log n). El resto de las operaciones contribuye en menor medida a la complejidad general ya que practicamente todas las acciones del arbol avl son de la misma complejidad que el merge sort
 
