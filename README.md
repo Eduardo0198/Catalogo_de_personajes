@@ -7,7 +7,8 @@
 ### SICT0301: Evalúa los componentes
 
 #### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
-### Merge Sort
+    
+     -> Merge Sort
 
 #### Hace un análisis de complejidad correcto y completo todas las estructuras de datos y cada uno de sus usos en el programa.
 
