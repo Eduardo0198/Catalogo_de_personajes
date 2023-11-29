@@ -8,8 +8,8 @@
 
 #### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
 *Ordenamiento (Merge Sort):*
-Uso: El algoritmo de ordenamiento merge sort se utiliza para ordenar el vector de personajes en tres ocasiones: por nombre, por casa y por frase.
-Complejidad: La complejidad de merge sort es O(n log n), donde n es el número de elementos en el vector. Dado que se realizan 3 tipos de busqueda acorde a los tres atributos del personaje (nombre, casa y frase), se podría expresar como 3 * O(n log n), pero asintóticamente se simplifica a O(n log n).
+-> El algoritmo de ordenamiento merge sort se utiliza para ordenar el vector de personajes en tres ocasiones: por nombre, por casa y por frase.
+-> Complejidad: La complejidad de merge sort es O(n log n), donde n es el número de elementos en el vector. Dado que se realizan 3 tipos de busqueda acorde a los tres atributos del personaje (nombre, casa y frase), se podría expresar como 3 * O(n log n), pero asintóticamente se simplifica a O(n log n).
 #### Hace un análisis de complejidad correcto y completo todas las estructuras de datos y cada uno de sus usos en el programa.
 *Estructuras de Datos (Árbol AVL):*
 Inserción (add): La inserción en un árbol AVL tiene una complejidad de O(log n), donde n es el número de nodos en el árbol, esta funcion se ocupa para agregar objetos de tipo personaje al arbol AVL y a su vez al archivo txt esto con el fin de que se puedan ir almacenando para despues poder consultarlos.
@@ -18,7 +18,7 @@ Búsqueda (find): La búsqueda en un árbol AVL también tiene una complejidad d
 Recorridos (Inorder, Preorder): Realizar recorridos en un árbol AVL tiene una complejidad de O(n), donde n es el número de nodos en el árbol. estas funciones se utilizan para imprimir la información de cada nodo durante la visualización del catálogo completo (6. Mostrar la catalogo completa)
 Como tal el O(n log n) es la complejidad que define mas al AVL ya sea en sus mejores o peores casos. 
 *Búsqueda en Vector*
-Uso: Se realiza una búsqueda lineal en el vector para determinar la existencia de un personaje al mostrar opciones al usuario.
+Se realiza una búsqueda lineal en el vector para determinar la existencia de un personaje al mostrar opciones al usuario.
 Complejidad: La búsqueda lineal tiene una complejidad de O(n), donde n es el tamaño del vector.
 #### Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa.
 *Complejidad Total*
