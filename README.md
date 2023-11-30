@@ -27,14 +27,13 @@
        cada nodo durante la visualización del catálogo completo (6. Mostrar la catalogo completa).</li>
 </ul>
 Como tal el O(n log n) es la complejidad que define mas al AVL ya sea en sus mejores o peores casos. 
-
+\n
 *Busqueda en Vector:*
 
 Se realiza una búsqueda lineal en el vector para determinar la existencia de un personaje al mostrar opciones al usuario.
 
- -Complejidad: La búsqueda lineal tiene una complejidad de O(n), donde n es el tamaño del vector.
+- Complejidad: La búsqueda lineal tiene una complejidad de O(n), donde n es el tamaño del vector.
 
-  
 #### Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa.
 *Complejidad Total:*
 
