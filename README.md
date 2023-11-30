@@ -26,7 +26,6 @@
    <li>Recorridos (Inorder, Preorder): Realizar recorridos en un árbol AVL tiene una complejidad de O(n), donde n es el número de nodos en el árbol. estas funciones se utilizan para imprimir la información de 
        cada nodo durante la visualización del catálogo completo (6. Mostrar la catalogo completa).</li>
 </ul>
-
 Como tal el O(n log n) es la complejidad que define mas al AVL ya sea en sus mejores o peores casos. 
 
 *Búsqueda en Vector:*
