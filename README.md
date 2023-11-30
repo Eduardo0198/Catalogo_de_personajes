@@ -50,6 +50,7 @@ Se realiza una búsqueda lineal en el vector para determinar la existencia de un
 - Inserción y Eliminación Eficientes: La eficiencia en las operaciones de inserción y eliminación también es fundamental para mantener actualizado el catálogo de personajes. Los árboles AVL ajustan automáticamente su estructura durante estas operaciones para mantener el equilibrio, asegurando así un rendimiento eficiente incluso en escenarios de modificación frecuente.
 
 - Ordenamiento Automático: Los árboles AVL mantienen una estructura de ordenación intrínseca. Cada nodo en el árbol tiene una relación de orden con sus nodos secundarios. Esto facilita la implementación de operaciones de búsqueda ordenada y recorridos en orden, como se evidencia en las funciones que buscan personajes por nombre, casa y frase.
+
 #### Selecciona una estructura de datos adecuada al problema y lo usa correctamente.
 
 ### SICT0303: Implementa acciones científicas
