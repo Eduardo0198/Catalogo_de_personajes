@@ -43,13 +43,13 @@ Se realiza una búsqueda lineal en el vector para determinar la existencia de un
 
 #### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
 *Estructuras de Datos (Árbol AVL):*
-- Utlice esta estructura de datos ya que era la que mas se acopla a lo que quiero lograr, al inicie intente usar las listas enlazadas pero me di cuenta que era una mejor opcion usar una tipo de arbol, particularmente el AVL. 
+Utlice esta estructura de datos ya que era la que mas se acopla a lo que quiero lograr, al inicie intente usar las listas enlazadas pero me di cuenta que era una mejor opcion usar una tipo de arbol, particularmente el AVL. 
 
-- Búsqueda Eficiente: Los árboles AVL están diseñados para mantenerse balanceados, lo que garantiza una altura mínima del árbol. Esto se traduce en búsquedas más eficientes con una complejidad de O(log n), donde "n" es el número de elementos en el árbol. Dado que el catálogo de personajes podría crecer, esta eficiencia en las operaciones de búsqueda es crucial.
+- *Búsqueda Eficiente:* Los árboles AVL están diseñados para mantenerse balanceados, lo que garantiza una altura mínima del árbol. Esto se traduce en búsquedas más eficientes con una complejidad de O(log n), donde "n" es el número de elementos en el árbol. Dado que el catálogo de personajes podría crecer, esta eficiencia en las operaciones de búsqueda es crucial.
 
-- Inserción y Eliminación Eficientes: La eficiencia en las operaciones de inserción y eliminación también es fundamental para mantener actualizado el catálogo de personajes. Los árboles AVL ajustan automáticamente su estructura durante estas operaciones para mantener el equilibrio, asegurando así un rendimiento eficiente incluso en escenarios de modificación frecuente.
+- *Inserción y Eliminación Eficientes:* La eficiencia en las operaciones de inserción y eliminación también es fundamental para mantener actualizado el catálogo de personajes. Los árboles AVL ajustan automáticamente su estructura durante estas operaciones para mantener el equilibrio, asegurando así un rendimiento eficiente incluso en escenarios de modificación frecuente.
 
-- Ordenamiento Automático: Los árboles AVL mantienen una estructura de ordenación intrínseca. Cada nodo en el árbol tiene una relación de orden con sus nodos secundarios. Esto facilita la implementación de operaciones de búsqueda ordenada y recorridos en orden, como se evidencia en las funciones que buscan personajes por nombre, casa y frase.
+- *Ordenamiento Automático:* Los árboles AVL mantienen una estructura de ordenación intrínseca. Cada nodo en el árbol tiene una relación de orden con sus nodos secundarios. Esto facilita la implementación de operaciones de búsqueda ordenada y recorridos en orden, como se evidencia en las funciones que buscan personajes por nombre, casa y frase.
 
 #### Selecciona una estructura de datos adecuada al problema y lo usa correctamente.
 
