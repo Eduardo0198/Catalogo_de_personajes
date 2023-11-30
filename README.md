@@ -19,7 +19,7 @@
 <ul>
   <li>Inserción (add): La inserción en un árbol AVL tiene una complejidad de O(log n), donde n es el número de nodos en el árbol, esta funcion se ocupa para agregar objetos de tipo personaje al arbol AVL y a su 
       vez al archivo txt esto con el fin de que se puedan ir almacenando para despues poder consultarlos.</li>
-  <li>Eliminación (remove): La eliminación en un árbol AVL tiene una complejidad de O(log n), esta funcion se utliza para comer pitos poder eliminar personajes del arbol AVL y a su vez eliminarlos del archivo txt.</li>
+  <li>Eliminación (remove): La eliminación en un árbol AVL tiene una complejidad de O(log n), esta funcion se utliza para eliminar nodos del arbol AVL y a su vez eliminarlos del archivo txt.</li>
   <li>Búsqueda (find): La búsqueda en un árbol AVL también tiene una complejidad de O(log n), esta funcion se utlizo para poder encontrar nodos (objetos de tipo personaje) solo que en el codigo hay 3 funciones 
       con la misma logica pero buscan diferentes atributos del personaje, esto quiere decir que puedes hacer 3 tipos de busqueda, con find (nombre del personaje), findCasa (Apellido del personaje), findFrase 
       (Frase del personaje)</li>
