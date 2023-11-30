@@ -37,9 +37,6 @@ Se realiza una búsqueda lineal en el vector para determinar la existencia de un
 </ul
   
 #### Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa.
-
-
-
 *Complejidad Total:*
 
 La operación dominante es el ordenamiento del vector de personajes con merge sort, lo que determina la complejidad final del programa: O(n log n). El resto de las operaciones contribuye en menor medida a la complejidad general ya que practicamente todas las acciones del arbol avl son de la misma complejidad que el merge sort.
