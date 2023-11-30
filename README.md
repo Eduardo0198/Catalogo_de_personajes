@@ -1,25 +1,68 @@
 # *Catalogo de personajes*
 
-El programa simula las relaciones que existen en un arbol genealogico, esto se puede lograr atreves de los grafos, estos son mas sencillos de usar pues los nodos de un grafo son mas faciles de manipular para poder crear relaciones complejas. Ya que el programa trata de simular a la Casa Targeryan de la serie de TV de Game of Thrones y House of the Dragon, podemos darnos cuentas que las relaciones familiares tienden ser mas complejas de lo habitual.
+### Descripcion del programa
 
-Esto funcionaria de la siguiente manera.
-Hay dos tipo de Nodos, uno que representa al Hombre y el otro a la mujer, dichos nodos se podran conectar atraves de arcos con distintos pesos, ya que en un arbol genalogico so representan las relaciones de conyuge y de hijos, decidi tener un diferenciador en el peso de los arcos: 
+### Formato del Personaje
 
-- a) 1 representara la relacion de conyuge entre un nodo mujer y un nodo hombre
-- b) 2 representara la relacion de hijos, en este caso solo un nodo mujer es quien se podra enlazar a mas nodos
+### SICT0301: Evalúa los componentes
 
-Esto se leeria atraves de los archivos txt, para esto abria un formato en especifico en el que los personajes se relacionen, es decir que si quieres que los personajes sean acamodados de una manera en especifico primero necesitamos establecerlo en el archivo txt, un ejemplo claro que se puede ver seria  el siguiete. 
+#### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
+*Ordenamiento (Merge Sort):*
+<ul>
+  <li>El algoritmo de ordenamiento merge sort se utiliza para ordenar el vector de personajes en tres ocasiones: por nombre, por casa y por frase.</li>
+  <li>Complejidad: La complejidad de merge sort es O(n log n), donde n es el número de elementos en el vector. Dado que se realizan 3 tipos de busqueda acorde a los tres atributos del personaje (nombre, casa y frase), se podría expresar como 3 * O(n log n), pero asintóticamente se simplifica a O(n log n)</li>
+</ul>
 
-```
-Nombre, Casa, Sexo, Conyuge, Biografia
-Deanerys, Targeryan, F, Jon, Madre de Dragones y rompededora de cadenas
-Jon, Stark, M, Deanerys, El principe que fue prometido
-Tryion, Lanister, M, Sansa, La mano de la reina
-```
-Los cinco atributos de los personajes serian Nombre, casa, sexo, conyuge y biografia. Puede haber personajes que no sean tan importantes para el arbol genealogico de los Targeryan o simplemente no nos interesen tanto sus atributos, mas haya del nombre, sexo y casa. En dado caso lo que hariamos seria:
-```
-Nombre, Casa, Sexo, Conyuge, Biografia
-Ramsey, Bolton, M, null, El bastardo de fuerte terror
-Walder, Frey, M, null, null
-```
-Por ahora parte delo proyecto solo tiene como tal la base de la logica, es decir falta agregar un metodo de lectura de archivos para que este pueda obtener datos y poder ordenarlos
+#### Hace un análisis de complejidad correcto y completo todas las estructuras de datos y cada uno de sus usos en el programa.
+
+*Estructuras de Datos (Árbol AVL):*
+<ul>
+  <li>Inserción (add): La inserción en un árbol AVL tiene una complejidad de O(log n), donde n es el número de nodos en el árbol, esta funcion se ocupa para agregar objetos de tipo personaje al arbol AVL y a su 
+      vez al archivo txt esto con el fin de que se puedan ir almacenando para despues poder consultarlos.</li>
+  <li>Eliminación (remove): La eliminación en un árbol AVL tiene una complejidad de O(log n), esta funcion se utliza para eliminar nodos del arbol AVL y a su vez eliminarlos del archivo txt.</li>
+  <li>Búsqueda (find): La búsqueda en un árbol AVL también tiene una complejidad de O(log n), esta funcion se utlizo para poder encontrar nodos (objetos de tipo personaje) solo que en el codigo hay 3 funciones 
+      con la misma logica pero buscan diferentes atributos del personaje, esto quiere decir que puedes hacer 3 tipos de busqueda, con find (nombre del personaje), findCasa (Apellido del personaje), findFrase 
+      (Frase del personaje)</li>
+   <li>Recorridos (Inorder, Preorder): Realizar recorridos en un árbol AVL tiene una complejidad de O(n), donde n es el número de nodos en el árbol. estas funciones se utilizan para imprimir la información de 
+       cada nodo durante la visualización del catálogo completo (6. Mostrar la catalogo completa).</li>
+</ul>
+0Como tal el O(n log n) es la complejidad que define mas al AVL ya sea en sus mejores o peores casos. <br/> 
+
+*Busqueda en Vector:*
+
+Se realiza una búsqueda lineal en el vector para determinar la existencia de un personaje al mostrar opciones al usuario.
+
+- Complejidad: La búsqueda lineal tiene una complejidad de O(n), donde n es el tamaño del vector.
+
+#### Hace un análisis de complejidad correcto y completo para todos los demás componentes del programa y determina la complejidad final del programa.
+*Complejidad Total:*
+
+- La operación dominante es el ordenamiento del vector de personajes con merge sort, lo que determina la complejidad final del programa: O(n log n). El resto de las operaciones contribuye en menor medida a la complejidad general ya que practicamente todas las acciones del arbol avl son de la misma complejidad que el merge sort.
+
+### SICT0302: Toma decisiones
+
+#### Selecciona un algoritmo de ordenamiento adecuado al problema y lo usa correctamente.
+*Estructuras de Datos (Árbol AVL):*
+Utlice esta estructura de datos ya que era la que mas se acopla a lo que quiero lograr, al inicie intente usar las listas enlazadas pero me di cuenta que era una mejor opcion usar una tipo de arbol, particularmente el AVL. 
+
+- *Búsqueda Eficiente:* Los árboles AVL están diseñados para mantenerse balanceados, lo que garantiza una altura mínima del árbol. Esto se traduce en búsquedas más eficientes con una complejidad de O(log n), donde "n" es el número de elementos en el árbol. Dado que el catálogo de personajes podría crecer, esta eficiencia en las operaciones de búsqueda es crucial.
+
+- *Inserción y Eliminación Eficientes:* La eficiencia en las operaciones de inserción y eliminación también es fundamental para mantener actualizado el catálogo de personajes. Los árboles AVL ajustan automáticamente su estructura durante estas operaciones para mantener el equilibrio, asegurando así un rendimiento eficiente incluso en escenarios de modificación frecuente.
+
+- *Ordenamiento Automático:* Los árboles AVL mantienen una estructura de ordenación intrínseca. Cada nodo en el árbol tiene una relación de orden con sus nodos secundarios. Esto facilita la implementación de operaciones de búsqueda ordenada y recorridos en orden, como se evidencia en las funciones que buscan personajes por nombre, casa y frase.
+
+#### Selecciona una estructura de datos adecuada al problema y lo usa correctamente.
+
+- *Eficiencia:* Merge Sort tiene una complejidad temporal de O(n log n), lo que lo hace eficiente para grandes conjuntos de datos.
+
+- *Estabilidad:* Merge Sort es un algoritmo estable, lo que significa que mantiene el orden relativo de los elementos con claves iguales. En este caso, es importante mantener el orden alfabético de los personajes con el mismo nombre.
+
+- *Implementación Simple:* Merge Sort es relativamente fácil de implementar y entender, lo que mejora la mantenibilidad del código.
+
+### SICT0303: Implementa acciones científicas
+
+#### Implementa mecanismos para consultar información de las estructras correctos.
+
+#### Implementa mecanismos de lectura de archivos para cargar datos a las estructuras de manera correcta.
+
+#### Implementa mecanismos de escritura de archivos para guardar los datos de las estructuras de manera correcta.
