@@ -53,6 +53,12 @@ Utlice esta estructura de datos ya que era la que mas se acopla a lo que quiero 
 
 #### Selecciona una estructura de datos adecuada al problema y lo usa correctamente.
 
+- *Eficiencia:* Merge Sort tiene una complejidad temporal de O(n log n), lo que lo hace eficiente para grandes conjuntos de datos.
+
+- *Estabilidad:* Merge Sort es un algoritmo estable, lo que significa que mantiene el orden relativo de los elementos con claves iguales. En este caso, es importante mantener el orden alfabético de los personajes con el mismo nombre.
+
+- *Implementación Simple:* Merge Sort es relativamente fácil de implementar y entender, lo que mejora la mantenibilidad del código.
+
 ### SICT0303: Implementa acciones científicas
 
 #### Implementa mecanismos para consultar información de las estructras correctos.
