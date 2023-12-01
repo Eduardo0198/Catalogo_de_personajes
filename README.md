@@ -1,9 +1,17 @@
 # *Catalogo de personajes*
 
 ### Descripcion del programa
-
+El programa "Catálogo de Personajes" constituye una aplicación en C++ destinada a gestionar información sobre personajes de la serie "Game of Thrones". Utiliza un árbol AVL para optimizar búsquedas y un vector para almacenar y manipular datos de manera eficiente. A través de funciones de lectura y escritura de archivos, el programa carga y guarda información, garantizando consistencia entre las estructuras internas y el archivo de texto. Su funcionalidad principal incluye la búsqueda, adición y eliminación de personajes, todo con el fin de poder simular un porgrama de consulta de informacion que trabaje con archivos txt existentes.
 ### Formato del Personaje
-
+El formato del personaje se define por Nombre, Casa y Frase. El formato en el que el codigo lo lee, es que no tenga comas y que tenga espacios entre los atributos del personaje. 
+```
+Nombre Casa Frase
+Aerys Targaryen El_rey_loco
+Cersei Lannister We_wil_defeat_it
+Eddard Stark The_Honourable_Man
+Joefrey Baratheon El_peor_rey
+Olena Tyrell Tell_Cersei_it_was_me
+```
 ### SICT0301: Evalúa los componentes
 
 #### Hace un análisis de complejidad correcto y completo para los algoritmos de ordenamiento usados en el programa.
@@ -53,12 +61,17 @@ Utlice esta estructura de datos ya que era la que mas se acopla a lo que quiero 
 
 - *Estabilidad:* Merge Sort es un algoritmo estable, lo que significa que mantiene el orden relativo de los elementos con claves iguales. En este caso, es importante mantener el orden alfabético de los personajes con el mismo nombre.
 
-- *Implementación Simple:* Merge Sort es relativamente fácil de implementar y entender, lo que mejora la mantenibilidad del código.
-
-### SICT0303: Implementa acciones científicas
+- *Aprovecha Mejor las Características de los Vectores:* Merge Sort se adapta bien a las capacidades de dividir y combinar eficientemente en vectores.
+  
+### SICT0303: Implementa acciones científicas  
 
 #### Implementa mecanismos para consultar información de las estructras correctos.
-
+- En la clase AVL, se tienen funciones específicas para buscar personajes por nombre (find), por casa (findCasa), y por frase (findFrase). Estas funciones utilizan la propiedad de los árboles AVL para realizar búsquedas eficientes.
+Estos metodos tienen la misma estructura, lo unico que cambia es el argumento para poder filtrar a los personajes, 
 #### Implementa mecanismos de lectura de archivos para cargar datos a las estructuras de manera correcta.
-
+- En el main.cpp, se utiliza un bucle while para leer cada línea del archivo "GoT.txt" con un ifstream.
+- La información leída se utiliza para crear objetos de la clase personaje y se agregan tanto al árbol AVL (arbolAVL) como al vector de personajes (catalogo).
 #### Implementa mecanismos de escritura de archivos para guardar los datos de las estructuras de manera correcta.
+- Al agregar un nuevo personaje, se abre el archivo "GoT.txt" en modo ios::app (append) y se escribe el nuevo personaje.
+Al eliminar un personaje, se actualiza el archivo escribiendo el contenido actualizado del vector catalogo en el archivo.
+Esto asegura que en el txt se pueda visualizar los personajes que sean eliminados o agregados, en el caso de que un personaje nuevo se agregue, este nuevo objeto entra en toda la estrucutra del codigo, es decir que tambien pordrias acceder a el por nombre, casa y frase.
